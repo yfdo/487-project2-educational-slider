@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+:root {
+    --akira-length: 160px;
+}
+
+#cyberpunk-title {
+    position: absolute;
+    width: 45vw;
+    transform: translate(40%, -50%);
+}
+
+.title-slide p {
+    text-align: left;
+    padding-right: 20px;
+}
+
+#akira-image {
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    width: 40vw;
+}
+
+.current #akira-image {
+    animation: shake 0.5s;
+    animation-delay: 0.2s;
+}
+
+.akira-slide h1, .akira-slide h3 {
+    text-align: right;
+}
+
+.akira-slide {
+    padding-top: 3em;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+}
+
+.current h1 {
+    animation: animated-text 2s steps(15, end) 1s 1 normal both, animated-cursor 600ms steps(15, end) infinite;
+    animation-delay: 0.5s;
+}
+
+.current #cyberpunk-title {
+    animation: flash 1s;
+}
+
+/*enlarge image on appear*/
+
+@keyframes shake {
+    from {
+        transform: translate(-50%, -50%);
+        width: 80vw;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 3.5em;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*flash title animation*/
+
+@keyframes flash {
+    0% {
+        filter: none;
+    }
+    20% {
+        filter: drop-shadow(16px 16px 20px red) invert(75%);
+    }
+    30% {
+        filter: none;
+    }
+    31% {
+        filter: drop-shadow(16px 16px 20px red) invert(75%);
+    }
+    100% {
+        filter: none;
+    }
+}

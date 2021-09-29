@@ -3,46 +3,74 @@
 
 <head>
   <meta charset="utf-8">
-  <title>jQuery Fullscreen Presentation Plugin Demo</title>
+  <title>Cyberpunk in Anime</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  
-  <!--slider-->
-  <div id="slideShow" class="slides-wrapper">
-    <section class="slide">
-      <h1>Fullscreen Presentation Demo</h1>
-      <h3>Created by <a href="http://www.alinabasova.com/" tartget="_blank" rel="nofollow">Alina Basova</a> </h3>
-      <h3>Inspired by <a href="http://lab.hakim.se/reveal-js/#/" tartget="_blank" rel="nofollow">Reveal.js</a> </h3>
-    </section>
-    <section class="slide">
-      <h1>2 Fullscreen Presentation Demo</h1>
-      <h3>Created by <a href="http://www.alinabasova.com/" tartget="_blank" rel="nofollow">Alina Basova</a> </h3>
-      <h3>Inspired by <a href="http://lab.hakim.se/reveal-js/#/" tartget="_blank" rel="nofollow">Reveal.js</a> </h3>
-    </section>
-    <section class="slide">
-      <h2>Second slide with text</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s.</p>
-    </section>
-    <section class="slide">
-      <h1>Third slide with list</h1>
-      <ul>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item</li>
-      </ul>
-    </section>
+  <div id="timeline">
+
+    <!--slider-->
+    <div id="slideShow" class="slides-wrapper">
+      <section class="slide">
+        <img id="cyberpunk-title" src="images/cyberpunk-title.png" alt="cyberpunk in anime">
+        <div class="slider-content title-slide">
+          <p>Cyberpunk is a subgenre of science fiction in a dystopian futuristic setting that tends to focus on a
+            "combination of lowlife and high tech" featuring advanced technological and scientific achievements, such as
+            artificial intelligence and cybernetics, juxtaposed with a degree of breakdown or radical change in the
+            social order.
+            Various forms of media have been exploring this concept, including literature, film, video game and comics.
+            This slider will lead you through its anime adaptation and developement.</p>
+        </div>
+      </section>
+
+
+      <section class="slide">
+        <h1>AKIRA</h1>
+        <img src="images/akira-transparent.png" alt="akira" id="akira-image">
+        <div class="slider-content akira-slide">
+          <h3>Created by <a href="http://www.alinabasova.com/" tartget="_blank" rel="nofollow">Alina Basova</a> </h3>
+          <h3>Inspired by <a href="http://lab.hakim.se/reveal-js/#/" tartget="_blank" rel="nofollow">Reveal.js</a> </h3>
+        </div>
+      </section>
+
+
+      <section class="slide">
+        <h1>Second slide with text</h1>
+        <div class="slider-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s.</p>
+        </div>
+      </section>
+
+
+
+      <section class="slide">
+        <h1>Third slide with list</h1>
+        <div class="slider-content">
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+
+    <!--timeline-->
+    <ul class="timeline-line">
+      <li>2019</li>
+      <li>2020</li>
+    </ul>
+
   </div>
-
-
-  <!--timeline-->
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

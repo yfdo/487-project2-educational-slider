@@ -1,0 +1,16 @@
+.timeline-line {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    background: url('../images/dot.gif') left 45px repeat-x;
+}
+
+.timeline-line li {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px;
+    background: url('../images/biggerdot.png') center bottom no-repeat;
+}
