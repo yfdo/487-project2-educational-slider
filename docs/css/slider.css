@@ -5,7 +5,8 @@ body {
     /*hidden*/
     min-height: 500px;
     min-width: 300px;
-    background: url(../images/diagmonds.png);
+    background: url(../images/cybercity.jfif);
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -85,7 +86,7 @@ a:hover {
     transition: 0.7s all cubic-bezier(0.260, 0.860, 0.440, 0.985);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     box-shadow: 0 0 20px 10px #000;
     box-sizing: border-box;
@@ -152,12 +153,12 @@ a:hover {
 }
 
 .nav-button.prev {
-    background-image: url(../images/arrow-left.png);
+    background-image: url(../images/digital-left-arrow.png);
     left: 0;
 }
 
 .nav-button.next {
-    background-image: url(../images/arrow-right.png);
+    background-image: url(../images/digital-right-arrow.png);
     right: 0;
 }
 

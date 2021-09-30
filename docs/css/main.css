@@ -3,7 +3,7 @@
     --akira-length: 160px;
 }
 
-.slider-content p{
+.slider-content p {
     font-size: 0.8em;
     margin: auto;
 }
@@ -52,15 +52,17 @@ h1 {
     position: absolute;
     right: 10px;
     top: 15px;
+    color: rgba(200, 80, 10, 1);
 }
 
 .current h1 {
-    animation: animated-text 2s steps(15, end) 1s 1 normal both, animated-cursor 600ms steps(15, end) infinite;
+    animation: animated-text 2s steps(5, end) 1s 1 normal both, animated-cursor 600ms steps(5, end) infinite;
     animation-delay: 0.5s;
 }
 
 .current #cyberpunk-title {
     animation: flash 1s 2;
+    animation-delay: 0.5s;
 }
 
 /*enlarge image on appear*/

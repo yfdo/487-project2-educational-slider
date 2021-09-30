@@ -22,7 +22,9 @@ var myPresentation = function () {
         document.body.appendChild(nextButton);
         document.body.appendChild(prevButton);
         nextButton.className = 'next nav-button';
+        nextButton.id = 'next-button';
         prevButton.className = 'prev nav-button';
+        prevButton.id = 'prev-button';
 
         cb_addEventListener(nextButton, 'click', goNext);
         cb_addEventListener(prevButton, 'click', goBack);
