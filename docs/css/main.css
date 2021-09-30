@@ -6,6 +6,7 @@
 .slider-content p {
     font-size: 0.8em;
     margin: auto;
+    z-index: 20;
 }
 
 #cyberpunk-title {
@@ -16,14 +17,14 @@
 
 .title-slide p {
     text-align: left;
-    padding-right: 30px;
+    padding-right: 60px;
 }
 
 #akira-image {
     position: absolute;
     left: 0;
     transform: translate(-50%, -50%);
-    z-index: 9;
+    z-index: 10;
     width: 40vw;
 }
 
@@ -37,11 +38,11 @@
 }
 
 .akira-slide p {
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
-.akira-slide {
-    padding-top: 2em;
+.akira-slide, .ghost-slide {
+    margin-top: 2em;
 }
 
 h1 {
@@ -55,9 +56,8 @@ h1 {
     color: rgba(200, 80, 10, 1);
 }
 
-.current h1 {
-    animation: animated-text 2s steps(5, end) 1s 1 normal both, animated-cursor 600ms steps(5, end) infinite;
-    animation-delay: 0.5s;
+.current #akira-title {
+    animation: animated-text-1 1.5s steps(5, end) 0.5s 1 normal both, animated-cursor 600ms steps(5, end) infinite;
 }
 
 .current #cyberpunk-title {
@@ -65,7 +65,36 @@ h1 {
     animation-delay: 0.5s;
 }
 
-/*enlarge image on appear*/
+.current #ghost-title {
+    animation: animated-text-2 3s steps(18, end) 0.5s normal both, animated-cursor 600ms steps(18, end) infinite;
+}
+
+.current .ghost-slide {
+    animation: digital-rain 7s;
+}
+
+#ghost-image {
+    position: absolute;
+    right: 0;
+    transform: translate(-35%, -70%);
+    z-index: -10;
+    width: 30vw;
+}
+
+/*digital rain animation*/
+
+@keyframes digital-rain {
+    0% {
+        background: url(../images/digital-rain-rotated.gif) 100%;
+        color: black;
+    }
+    100% {
+        background: 10%;
+        color: auto;
+    }
+}
+
+/*enlarge image on appear animation*/
 
 @keyframes shake {
     from {
@@ -79,12 +108,21 @@ h1 {
 
 /* text animation */
 
-@keyframes animated-text {
+@keyframes animated-text-1 {
     from {
         width: 0;
     }
     to {
         width: 3.5em;
+    }
+}
+
+@keyframes animated-text-2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12em;
     }
 }
 

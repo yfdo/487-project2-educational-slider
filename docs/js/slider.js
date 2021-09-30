@@ -20,7 +20,7 @@ var myPresentation = function () {
             config();
         }
 
-        var timeline_text = ['intro', '1987', '1999', '2000'];
+        var timeline_text = ['intro', '1982', '1995', '1998', 'development'];
 
         /*create timeline dots*/
         for (let i = 0; i < slidesNum; i++) {
