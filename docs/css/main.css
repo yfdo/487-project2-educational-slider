@@ -59,7 +59,7 @@ h1 {
 }
 
 .current #cyberpunk-title {
-    animation: flash 1s;
+    animation: flash 1s 2;
 }
 
 /*enlarge image on appear*/
