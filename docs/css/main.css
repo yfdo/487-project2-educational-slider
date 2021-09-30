@@ -3,8 +3,9 @@
     --akira-length: 160px;
 }
 
-.slide-content {
+.slider-content p{
     font-size: 0.8em;
+    margin: auto;
 }
 
 #cyberpunk-title {
