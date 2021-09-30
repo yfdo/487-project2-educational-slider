@@ -41,7 +41,7 @@
 }
 
 .akira-slide {
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 h1 {
@@ -51,6 +51,7 @@ h1 {
     overflow: hidden;
     position: absolute;
     right: 10px;
+    top: 15px;
 }
 
 .current h1 {
