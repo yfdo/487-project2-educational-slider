@@ -3,6 +3,10 @@
     --akira-length: 160px;
 }
 
+.slide-content {
+    font-size: 0.8em;
+}
+
 #cyberpunk-title {
     position: absolute;
     width: 45vw;
@@ -27,8 +31,12 @@
     animation-delay: 0.2s;
 }
 
-.akira-slide h1, .akira-slide h3 {
+.akira-slide h1, .akira-slide p {
     text-align: right;
+}
+
+.akira-slide p {
+    padding-left: 30px;
 }
 
 .akira-slide {
