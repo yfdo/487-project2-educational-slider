@@ -20,16 +20,20 @@ var myPresentation = function () {
             config();
         }
 
+        var timeline_text = ['intro', '1987', '1999', '2000'];
+
         /*create timeline dots*/
         for (let i = 0; i < slidesNum; i++) {
             var dot = document.createElement('span');
             dot.className = "dot";
+            dot.innerText = timeline_text[i];
             dot.onclick = function () {
                 currentSlide = i;
                 step();
             };
             document.getElementById('dots-div').appendChild(dot);
         };
+
 
         document.body.appendChild(nextButton);
         document.body.appendChild(prevButton);
