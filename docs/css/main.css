@@ -28,20 +28,22 @@
     width: 40vw;
 }
 
+/*
 .current #akira-image {
     animation: shake 0.5s;
     animation-delay: 0.2s;
 }
+*/
 
 .akira-slide h1, .akira-slide p {
     text-align: right;
 }
 
-.akira-slide p {
+.akira-slide p, .cowboy-slide p {
     padding-left: 60px;
 }
 
-.akira-slide, .ghost-slide {
+.akira-slide, .ghost-slide, .cowboy-slide, .dev-slide {
     margin-top: 2em;
 }
 
@@ -73,12 +75,28 @@ h1 {
     animation: digital-rain 7s;
 }
 
+.current #cowboy-title {
+    animation: animated-text-3 2s steps(12, end) 0.5s normal both, animated-cursor 600ms steps(12, end) infinite;
+}
+
 #ghost-image {
     position: absolute;
     right: 0;
     transform: translate(-35%, -70%);
     z-index: -10;
     width: 30vw;
+}
+
+#cowboy-image {
+    position: absolute;
+    left: 0;
+    transform: translate(-60%, -35%);
+    width: 30vw;
+    z-index: -10;
+}
+
+.current #dev-title {
+    animation: animated-text-4 2s steps(11, end) 0.5s normal both, animated-cursor 600ms steps(11, end) infinite
 }
 
 /*digital rain animation*/
@@ -123,6 +141,24 @@ h1 {
     }
     to {
         width: 12em;
+    }
+}
+
+@keyframes animated-text-3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 8em;
+    }
+}
+
+@keyframes animated-text-4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 7.5em;
     }
 }
 
