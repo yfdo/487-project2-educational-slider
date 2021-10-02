@@ -104,7 +104,7 @@ h1 {
     animation: animated-text-5 1.5s steps(4, end) 0.5s normal both, animated-cursor 600ms steps(4, end) infinite;
 }
 
-.dot:hover {
+.dot:hover, .dot-active {
     animation: hover-timeline 0.5s forwards;
 }
 

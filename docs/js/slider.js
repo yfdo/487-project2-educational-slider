@@ -85,9 +85,6 @@ var myPresentation = function () {
         window.location.hash = currentSlide;
         checkButtons();
 
-        //show active dot
-        document.getElementById('dots-div')
-
         return false;
     }
 
@@ -131,6 +128,18 @@ var myPresentation = function () {
         else {
             return false;
         }
+
+        //show active dot
+        for (let i = 0; i < slidesNum; i++) {
+            if (i == currentSlide) {
+                document.getElementById('dots-div').children.item(i).className += " dot-active";
+            }
+            else {
+                console.log(document.getElementById('dots-div').children.item(i).className);
+                document.getElementById('dots-div').children.item(i).className = "dot";
+            }
+        }
+
     }
 
     return {
