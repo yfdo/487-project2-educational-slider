@@ -39,8 +39,11 @@
                     t.preventDefault(), o.methods.nextQuestion()
                 }), z(v).on("click", "#quiz-finish-btn", function (t) {
                     t.preventDefault(), o.methods.finish()
+                    //hide home button on result page
+                    document.getElementById('quiz-home-btn').style = "display: none;";
                 }), z(v).on("click", "#quiz-restart-btn, #quiz-retry-btn", function (t) {
                     t.preventDefault(), o.methods.restart()
+                    document.getElementById('quiz-home-btn').style = "display:block;"
                 })
             },
             setup: function () {
@@ -120,7 +123,7 @@ const myQuiz = [{
     ],
     'correctIndex': 1,
     'correctResponse': 'Correct! Cyberpunk is a subgenre of science fiction in a dystopian futuristic setting.',
-    'incorrectResponse': 'Try again! Cyberpunk is a subgenre of science fiction in a dystopian futuristic setting.'
+    'incorrectResponse': 'Oops! Cyberpunk is a subgenre of science fiction in a dystopian futuristic setting.'
 },
 {
     'q': 'Which anime marked the beginning of the Japanese cyberpunk subgenre?',
@@ -130,41 +133,37 @@ const myQuiz = [{
     ],
     'correctIndex': 0,
     'correctResponse': "Correct! The Japanese cyberpunk subgenre began in 1982 with the debut of Katsuhiro Otomo's manga series Akira.",
-    'incorrectResponse': "Try again! The Japanese cyberpunk subgenre began in 1982 with the debut of Katsuhiro Otomo's manga series Akira."
+    'incorrectResponse': "Oops! The Japanese cyberpunk subgenre began in 1982 with the debut of Katsuhiro Otomo's manga series Akira."
 },
 {
-    'q': 'A smaple question?',
+    'q': 'The digital rain in The Matrix was inspired by which anime?',
     'options': [
-        'Answer 1',
-        'Answer 2',
-        'Answer 3',
-        'Answer 4'
+        'Ghost in the Shell',
+        'Cowboy Bebop',
     ],
-    'correctIndex': 2,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctIndex': 0,
+    'correctResponse': 'Correct! The Matrix took several concepts from Ghost in the Shell.',
+    'incorrectResponse': 'Oops! The Matrix took several concepts from Ghost in the Shell.'
 },
 {
-    'q': 'A smaple question?',
+    'q': 'Which anime involves spaceship?',
     'options': [
-        'Answer 1',
-        'Answer 2'
+        'Akira',
+        'Cowboy Bebop'
     ],
     'correctIndex': 1,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctResponse': "Correct! The main characters' spaceship is called the Bebop.",
+    'incorrectResponse': "Oops! The main characters' spaceship is called the Bebop."
 },
 {
-    'q': 'A smaple question?',
+    'q': 'How does Japanese cyberpunk differ from Western cyberpunk?',
     'options': [
-        'Answer 1',
-        'Answer 2',
-        'Answer 3',
-        'Answer 4'
+        "It's presented in anime instead of literature, films and video games.",
+        "It has roots in underground music culture."
     ],
-    'correctIndex': 3,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctIndex': 1,
+    'correctResponse': 'Correct! Japanese cyberpunk is rooted in underground music culture.',
+    'incorrectResponse': 'Oops! Japanese cyberpunk is rooted in underground music culture.'
 }
 ]
 

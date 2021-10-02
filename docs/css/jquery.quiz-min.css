@@ -55,7 +55,6 @@
 }
 
 #quiz-buttons a, .quiz-container .quiz-button {
-    display: inline-block;
     padding: .5em 1em;
     background: #333;
     color: #fff;

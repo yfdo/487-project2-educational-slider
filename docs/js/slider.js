@@ -20,7 +20,7 @@ var myPresentation = function () {
             config();
         }
 
-        var timeline_text = ['intro', '1982', '1995', '1998', 'development'];
+        var timeline_text = ['intro', '1982', '1995', '1998', 'more', 'quiz'];
 
         /*create timeline dots*/
         for (let i = 0; i < slidesNum; i++) {
@@ -73,15 +73,21 @@ var myPresentation = function () {
 
     function step() {
         //hide timeline on quiz page
+        /*
         if (currentSlide == slidesNum - 1) {
             document.getElementById('dots-div').style = "animation: hide-timeline 1s 0.5s forwards";
         }
         else {
             document.getElementById('dots-div').style = "display:block;";
         }
+        */
         showSlide(currentSlide);
         window.location.hash = currentSlide;
         checkButtons();
+
+        //show active dot
+        document.getElementById('dots-div')
+
         return false;
     }
 
