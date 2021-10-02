@@ -135,7 +135,6 @@ var myPresentation = function () {
                 document.getElementById('dots-div').children.item(i).className += " dot-active";
             }
             else {
-                console.log(document.getElementById('dots-div').children.item(i).className);
                 document.getElementById('dots-div').children.item(i).className = "dot";
             }
         }

@@ -3,6 +3,14 @@
     font-size: 0.7em;
 }
 
+#quiz {
+    z-index: 30;
+}
+
+#quiz p, #quiz a {
+    font-size: 0.8rem;
+}
+
 .slider-content p {
     font-size: 1em;
     margin: auto;
@@ -222,14 +230,15 @@ h1 {
     left: 0;
     right: 0;
     background: url('../images/timeline-bkg.png') repeat-x;
-    z-index: 11;
+    z-index: 15;
     text-align: center;
 }
 
 .dot {
     cursor: pointer;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
+    font-size: 0.8em;
     margin: 0 3vw;
     background-color: #bbb;
     border-radius: 30%;
