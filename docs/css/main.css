@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-:root {
-    --akira-length: 160px;
-}
-
 .slider-content p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: auto;
     z-index: 20;
+}
+
+.slide{
+    font-size: 0.7em;
 }
 
 #cyberpunk-title {
@@ -56,6 +56,7 @@ h1 {
     right: 10px;
     top: 15px;
     color: rgba(200, 80, 10, 1);
+    font-size: 1.8em;
 }
 
 .current #akira-title {
@@ -96,7 +97,7 @@ h1 {
 }
 
 .current #dev-title {
-    animation: animated-text-4 2s steps(11, end) 0.5s normal both, animated-cursor 600ms steps(11, end) infinite
+    animation: animated-text-4 2s steps(11, end) 0.5s normal both, animated-cursor 600ms steps(11, end) infinite;
 }
 
 /*digital rain animation*/
@@ -212,7 +213,7 @@ h1 {
     cursor: pointer;
     height: 5rem;
     width: 5rem;
-    margin: 0 5vw;
+    margin: 0 3vw;
     background-color: #bbb;
     border-radius: 30%;
     display: inline-block;
@@ -222,4 +223,35 @@ h1 {
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+.question {
+    font-size: 1em;
+}
+
+.answers a {
+    padding: .3em .1em;
+}
+
+#quiz-home-btn, #quiz-start-btn {
+    display: block;
+    padding: .5em 1em;
+    background: #333;
+    color: #fff;
+    border-radius: 10px
+}
+
+@keyframes hide-timeline {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 }

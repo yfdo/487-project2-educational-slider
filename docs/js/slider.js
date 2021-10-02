@@ -72,6 +72,13 @@ var myPresentation = function () {
     }
 
     function step() {
+        //hide timeline on quiz page
+        if (currentSlide == slidesNum - 1) {
+            document.getElementById('dots-div').style = "animation: hide-timeline 1s 0.5s forwards";
+        }
+        else {
+            document.getElementById('dots-div').style = "display:block;";
+        }
         showSlide(currentSlide);
         window.location.hash = currentSlide;
         checkButtons();
